@@ -7,7 +7,7 @@ const fs = require('fs')
 bot.commands = new Discord.Collection();
 
 
-bot.login("NjkzMTYzMTkxMzAzMjc0NTI2.XoDaLw._m4bIPDO5OFm0DB5R_TbvlFb7J8")
+bot.login("NjkzODc4MDg1MzA0NzEzMjE2.XoDelQ.4mShMH2BgQRGE9nDFUFON_xjej8")
 
 bot.on("ready", () => {
     console.log("⟨∑⟩ RewardsBot Ces Connecté Avec Succès !")
@@ -151,6 +151,25 @@ bot.on('message', message => {
         .addField("10 Invites = 8 Comptes","( No Check )")
         .setImage("https://i.imgur.com/s7Dim22.gif")
         .setColor("#86B1E5")
+        .setFooter(bot.user.username + "")
+        .setThumbnail(message.author.avatarURL)
+        .setTimestamp()
+
+    message.channel.send({embed}) 
+    }
+})
+
+//amazon
+bot.on('message', message => {
+    if(message.content.startsWith(prefix + "amazon")){
+        var embed = new Discord.MessageEmbed()
+        .setTitle("Carte cadeau amazon")
+        .setDescription("2 Invites = 1 Compte")
+        .addField("4 Invites = 2 Comptes","---------------------")
+        .addField("8 Invites = 5 Comptes","---------------------")
+        .addField("10 Invites = 8 Comptes","---------------------")
+        .setImage("https://i.imgur.com/Ml7ePjX.gif")
+        .setColor("#D5910A")
         .setFooter(bot.user.username + "")
         .setThumbnail(message.author.avatarURL)
         .setTimestamp()
