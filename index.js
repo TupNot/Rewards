@@ -7,7 +7,7 @@ const fs = require('fs')
 bot.commands = new Discord.Collection();
 
 
-bot.login("NjkzMTYzMTkxMzAzMjc0NTI2.Xn5FGA.oE7LzsVW_vV0VkqJFVGa_d1ePn8")
+bot.login("NjkzMTYzMTkxMzAzMjc0NTI2.XoDaLw._m4bIPDO5OFm0DB5R_TbvlFb7J8")
 
 bot.on("ready", () => {
     console.log("⟨∑⟩ RewardsBot Ces Connecté Avec Succès !")
